@@ -11,6 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="addlayout 1"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="layout2 add text"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,5 +27,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="layout4 add text"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="layout5 add text"/>
 
 </LinearLayout>
