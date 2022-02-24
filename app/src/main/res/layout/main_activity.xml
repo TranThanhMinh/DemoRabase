@@ -3,19 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-<TextView
+  <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/app_name"/>
     <TextView
-<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="addlayout 1"/>
-=======
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="layout3 add text"/>
 
->>>>>>> add layout 3 add text master
+
 </LinearLayout>
