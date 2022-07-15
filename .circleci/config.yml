@@ -6,4 +6,6 @@ jobs:
     steps:
       - run:
           name: The First Step
-          command: ./gradlew assembleDebug
+          command:
+           sudo chmod +x ./gradlew
+          ./gradlew assembleDebug
