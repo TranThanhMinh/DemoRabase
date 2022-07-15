@@ -1,7 +1,17 @@
-version: 2.1
-orbs:
-  hello: circleci/hello-build@0.0.5
-workflows:
-  "Hello Workflow":
-    jobs:
-      - hello/hello-build
+  version: 2.1
+  orbs:
+    hello: circleci/hello-build@0.0.5
+  workflows:
+    "Hello Workflow":
+      jobs:
+        - hello/hello-build
+      steps:
+            - checkout
+            - android/restore-gradle-cache
+            - android/restore-build-cache
+            - android/run-tests:
+                test-command: ./gradlew assembleDebug
+            - android/save-gradle-cache
+            - android/save-build-cache
+
+
