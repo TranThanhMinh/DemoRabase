@@ -8,7 +8,7 @@ jobs:
           name: The Step 1
           command: |
             ./gradlew installDebug
-       - run:
+      - run:
           name: The Step 2
           command: |
             ./gradlew assembleDebug
