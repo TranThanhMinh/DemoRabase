@@ -5,7 +5,12 @@ jobs:
       - image: alpine:3.15
     steps:
       - run:
-          name: The First Step
+          name: The Step 1
           command: |
-            sudo chmod +x ./gradlew
+            ./gradlew installDebug
+
+       - run:
+          name: The Step 2
+          command: |
+            ./gradlew assembleDebug
       
